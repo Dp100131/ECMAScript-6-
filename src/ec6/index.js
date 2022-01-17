@@ -98,17 +98,109 @@ console.log('');
 
 const A = 'b';
 
-A = 'a';
+/* A = 'a'; */
 
 console.log(A);
 
 console.log('');
 
+console.groupEnd();
 
+console.group('Clase 3');
+
+let name1 = 'Oscar';
+let age1 = 20;
+
+// es5
+obj = {
+
+    name: name1,
+    age: age1
+
+};
+
+// es6
+
+obj2 = {
+
+    name1,
+    age1
+
+}
+
+// Arrow functions
+
+const names =[
+
+    {name: 'Daniel', age: 20},
+    {name: 'Saidy', age: 40}
+
+]
+
+//es5
+let listOfNames = names.map(function (item){
+
+    console.log(item.name);
+
+});
+
+//es6
+let listOfNames2 = names.map(item => console.log(item.name));
+
+
+//promise 
+
+const helloPromise = () =>{
+
+    return new Promise((resolve, reject) => {
+
+        if (true){
+
+            resolve('Hey!');
+
+        } else {
+
+            reject('Ups!!')
+
+        }
+
+    });
+
+};
+
+helloPromise()
+    .then(response => console.log(response))
+    .then(() => console.log('Hola'))
+    .catch(error => console.log(error));
+
+console.groupEnd();
+
+console.group('Clase 4')
+
+class calculator {
+
+    constructor(){
+
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+
+    sum(valueA, valueB){
+
+        this.valueA = valueA;
+        this.valueB = valueB;
+
+        return (this.valueA + this.valueB);
+    }
+}
+
+const calc = new calculator();
+
+console.log(calc.sum(20, 30));
 
 
 console.groupEnd();
 
-console.group('Clase 3');
+console.group('Clase 5')
 
 console.groupEnd();
