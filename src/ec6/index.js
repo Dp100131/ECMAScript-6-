@@ -198,9 +198,142 @@ const calc = new calculator();
 
 console.log(calc.sum(20, 30));
 
+/* import { hello } from './module.js';
+
+hello(); */
+
+function* helloWorld(){
+
+    if (true){
+
+        yield 'Hello, ';
+
+    }
+    
+    if (true){
+
+        yield 'World.';
+
+    }
+
+};
+
+const generator = helloWorld();
+
+console.log(generator.next().value);
+console.log(generator.next().value);
+console.log(generator.next().value); 
+
 
 console.groupEnd();
 
 console.group('Clase 5')
+
+// es7
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+if (numbers.includes(7)){
+
+    console.log('Si se encuentra el valor 7')
+
+} else {
+
+    console.log('No se encuentra el valor 7')
+
+}
+
+let base = 4;
+let exponent = 4 ;
+let result = base ** exponent; 
+
+console.log(result);
+
+console.groupEnd();
+
+console.group('Clase 6');
+
+// es8
+
+const data = {
+
+    frontend: 'Oscar',
+    backend: 'Isabel',
+    desing: 'Ana'
+
+}
+
+const entries = Object.entries(data);
+console.log(entries);
+console.log(entries.length);
+
+const values1 = Object.values(data);
+console.log(values1);
+console.log(values1.length);
+
+const string = 'hello';
+console.log(string.padStart(7, 'hi'));
+console.log(string.padEnd(12, ' --------'));
+console.log(string.padEnd((string.length + 5), ' ----'));
+
+/* const holamundo = () => {
+
+    return new Promise((resolve, reject) =>{
+
+        (false)
+        ? setTimeout(() => resolve('Hello world'), 3000)
+        : reject(new Error('Test Error'))
+
+    }); 
+
+};
+
+const helloAsync = async () => {
+
+    const hello = await holamundo();
+
+    console.log(hello);
+
+};
+
+helloAsync();
+
+const anotherFunction = async () => {
+
+    try {
+
+        let hello2 = await holamundo();
+        console.log(hello2)
+
+    } catch {error} {
+
+        console.log(error);
+
+    }
+
+}
+
+anotherFunction(); */
+
+
+console.groupEnd();
+
+console.group('Clase 7');
+
+console.groupEnd();
+
+console.group('Clase 8');
+
+console.groupEnd();
+
+console.group('Clase 9');
+
+console.groupEnd();
+
+console.group('Clase 10');
+
+console.groupEnd();
+
+console.group('Clase 11');
 
 console.groupEnd();
