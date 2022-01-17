@@ -412,6 +412,33 @@ console.groupEnd();
 
 console.group('Clase 9');
 
+// es11
+
+const big = 9007199254740991n; 
+
+const another = BigInt(9007199254740991);
+
+console.log(big);
+console.log(another);
+
+/* const promise1 = new Promise((resolve, reject) => reject("reject"));
+const promise2 = new Promise((resolve, reject) => resolve("resolve"));
+const promise3 = new Promise((resolve, reject) => resolve("resolve 1"));
+
+Promise.allSettled(promise1, promise2, promise3)
+    .then(response => console.log(response));
+ */
+
+const foo = 'asd' ?? 'default string';
+console.log(foo);
+
+const faa = null ?? 'default string';
+console.log(faa);
+
+const user = {};
+console.log(user?.profile?.email);
+
+
 console.groupEnd();
 
 console.group('Clase 10');
