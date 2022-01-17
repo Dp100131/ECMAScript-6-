@@ -443,6 +443,31 @@ console.groupEnd();
 
 console.group('Clase 10');
 
+// es12
+
+const stringf = 'JavaScript jgvfmkdcl,sxañz JavaScript'
+const replaceeee = stringf.replace("JavaScript", "Python");
+
+console.log(replaceeee);
+
+const replacer = stringf.replaceAll("JavaScript", "Python");
+console.log(replacer);
+
+class message{
+
+    #show(val){
+
+        console.log(val)
+
+    };
+
+};
+
+const Message = new message();
+
+Message.show('Hola!');
+
+
 console.groupEnd();
 
 console.group('Clase 11');
