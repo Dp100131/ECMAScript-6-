@@ -361,19 +361,52 @@ holamundo2()
     .finally(() => console.log('Finalizo'))
 
 
-const regexData = /([0 - 9]{4})-([0 - 9]{2})-([0 - 9]{2})/;
+/* const regexData = /([0 - 9]{4})-([0 - 9]{2})-([0 - 9]{2})/;
 const match = regexData.exec('2018-04-20');
 const year = match[1]
 const month = match[2]
 const day = match[3]
 
-console.log(day, month, year);
+console.log(day, month, year); */
 
 
 
 console.groupEnd();
 
 console.group('Clase 8');
+
+//es10
+
+let array50 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log(array50.flat(2));
+
+console.log(array50.flatMap(value => [value, value * 2]));
+
+let hello25 = '                            hello world!';
+
+console.log(hello25);
+console.log(hello25.trimStart());
+
+let hello35 = 'Hello world!           '
+console.log(hello35);
+console.log(hello35.trimEnd());
+
+/* try {
+
+} catch {
+
+    console.log(error);
+
+} */
+
+let entries20 = [['name', 'oscar'], ['age', 32]];
+
+console.log(Object.fromEntries(entries20));
+
+let mySymbl = `My Symbol`;
+let symbol = Symbol(mySymbl);
+console.log(symbol.description);
 
 console.groupEnd();
 
